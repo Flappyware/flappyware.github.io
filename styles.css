@@ -211,6 +211,7 @@ a:hover { text-decoration: underline; }
 }
 .footer-inner a { color: var(--muted); }
 .footer-inner a:hover { color: var(--text); }
+.footer-links { display: inline-flex; gap: 20px; }
 
 /* ---- Small screens ---- */
 @media (max-width: 560px) {
