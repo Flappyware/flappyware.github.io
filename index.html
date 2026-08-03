@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flappyware — Software &amp; Technology</title>
+  <meta name="description" content="Flappyware LLC builds software and technology products. Based in Coeur d'Alene, Idaho." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Flappyware" />
+  <meta property="og:description" content="Software & technology, built in Coeur d'Alene, Idaho." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://flappyware.com/" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234f8cff'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='white' font-family='Arial,sans-serif' font-weight='bold'%3EF%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Flappyware home">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span class="brand-name">Flappyware</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <h1>We build software<br />that gets out of your way.</h1>
+        <p class="lede">
+          Flappyware LLC is an independent software company creating focused,
+          reliable tools. <!-- EDIT: replace with your own one-line pitch. -->
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#products">See our products</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="prose">
+          <p>
+            Flappyware LLC is a technology company based in Coeur d'Alene, Idaho.
+            We design and ship practical software products and provide technology
+            consulting services. <!-- EDIT: tell your story here. -->
+          </p>
+          <p>
+            <!-- EDIT: A second paragraph about your mission, history, or approach. -->
+            Our focus is building things that are simple to use and dependable
+            over the long haul.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section section-alt">
+      <div class="container">
+        <h2>Products</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>NewsLazer</h3>
+            <p>
+              <!-- EDIT: Describe NewsLazer in a sentence or two. -->
+              A tool for reading and managing the news that matters to you.
+            </p>
+            <!-- EDIT: point this at the real product/download page when ready. -->
+            <a class="card-link" href="#contact">Learn more →</a>
+          </article>
+
+          <article class="card">
+            <h3>Consulting</h3>
+            <p>
+              <!-- EDIT: Describe your consulting services, or remove this card. -->
+              Technology consulting and custom software development for
+              businesses that need a hand.
+            </p>
+            <a class="card-link" href="#contact">Work with us →</a>
+          </article>
+
+          <!-- EDIT: duplicate a .card block above to add more products. -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div>
+            <h3>Email</h3>
+            <!-- EDIT: replace with your preferred public contact email. -->
+            <p><a href="mailto:hello@flappyware.com">hello@flappyware.com</a></p>
+          </div>
+          <div>
+            <h3>Mail</h3>
+            <address>
+              Flappyware LLC<br />
+              PO Box 2974<br />
+              Coeur d'Alene, ID 83816
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year">2026</span> Flappyware LLC. All rights reserved.</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
