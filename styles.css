@@ -35,6 +35,31 @@ body {
 a { color: var(--brand); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+/* Visible keyboard focus for accessibility */
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Skip-to-content link (visible only when focused) */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -48px;
+  z-index: 100;
+  padding: 10px 16px;
+  background: var(--brand);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: 12px;
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
   max-width: var(--maxw);
