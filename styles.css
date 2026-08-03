@@ -90,6 +90,14 @@ a:hover { text-decoration: underline; }
     radial-gradient(1200px 500px at 70% -10%, rgba(79, 140, 255, 0.18), transparent 60%),
     var(--bg);
 }
+.eyebrow {
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--brand);
+}
 .hero h1 {
   margin: 0 0 18px;
   font-size: clamp(2rem, 5vw, 3.4rem);
