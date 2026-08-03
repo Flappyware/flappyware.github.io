@@ -1,7 +1,44 @@
-# Google Drive / Windows clutter
+# ---- Operating system / cloud-sync clutter ----
+# Google Drive & Windows
 desktop.ini
 Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+[Dd]esktop.ini
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+# Linux
+*~
+.directory
+.Trash-*
 
-# Local Claude Code settings
+# ---- Editors / IDEs ----
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*.code-workspace
+
+# ---- Local tooling / secrets ----
 .claude/
+.env
+.env.*
+*.local
+
+# ---- Logs & caches ----
+*.log
+npm-debug.log*
+yarn-error.log*
+.cache/
+.tmp/
+.parcel-cache/
+
+# ---- Optional build tooling (in case Node is added later) ----
+node_modules/
+dist/
+build/
