@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://flappyware.com/</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://flappyware.com/</loc></url>
+  <url><loc>https://flappyware.com/ai-infrastructure/</loc></url>
+  <url><loc>https://flappyware.com/enterprise-networking/</loc></url>
+  <url><loc>https://flappyware.com/systems-operations/</loc></url>
 </urlset>
