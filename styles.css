@@ -12,4 +12,4 @@
 .software-service h3{font-size:1.4rem;line-height:1.2;margin:12px 0 0}.software-service p{color:var(--muted);font-size:.96rem;margin:0}.software-service a{font-size:.82rem;font-weight:700;color:#204c6c;text-decoration:none;border-bottom:1px solid #738896;padding:5px 0}.software-service a:hover{color:var(--blue)}
 @media(max-width:900px){.software-service{grid-template-columns:1fr 1fr}.software-service a{justify-self:start}}
 @media(max-width:680px){section[id]{scroll-margin-top:145px}.software-service{grid-template-columns:1fr;gap:15px;padding:24px}.software-service h3{margin-top:10px}.software-service a{justify-self:start}}
-@media(max-width:380px){.wrap,.container{width:calc(100% - 32px)}.hero-copy{padding-left:16px;padding-right:16px}.site-nav a{font-size:.74rem}.site-nav .nav-contact{padding:8px}.page-hero h1{font-size:clamp(2.25rem,10vw,3rem)}h1,h2{overflow-wrap:anywhere}}
+@media(max-width:380px){.wrap,.container{width:calc(100% - 32px)}.hero-copy{padding-left:16px;padding-right:16px}.site-nav a{font-size:.74rem;white-space:nowrap}.site-nav .nav-contact{padding:8px}.hero h1,.page-hero h1{font-size:clamp(2.25rem,10vw,3rem)}h1,h2{overflow-wrap:anywhere}}
