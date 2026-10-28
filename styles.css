@@ -3,7 +3,7 @@
 .contact-section .section-label.light { color: #315e75; } .contact-section .section-label.light span { color: #627d88; }
 
 /* Deployment imagery */
-.deployment-feature{padding:0 0 90px}.deployment-feature figure{margin:0}.deployment-feature img{display:block;width:100%;max-height:620px;object-fit:cover;object-position:center 48%;background:#d8dfde}.deployment-feature figcaption{border-top:3px solid #d97942;padding:12px 0 0;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:#536371}@media(max-width:680px){.deployment-feature{padding-bottom:65px}.deployment-feature img{max-height:450px}}
+.deployment-feature{padding:0 0 90px}.deployment-feature figure{margin:0}.deployment-feature img{display:block;width:100%;height:auto;max-height:620px;object-fit:cover;object-position:center 48%;background:#d8dfde}.deployment-feature figcaption{border-top:3px solid #d97942;padding:12px 0 0;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:#536371}@media(max-width:680px){.deployment-feature{padding-bottom:65px}.deployment-feature img{max-height:450px}}
 
 .principal-photo{width:80px;height:96px;object-fit:cover;object-position:35% 45%;flex:none}
 
