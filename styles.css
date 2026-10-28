@@ -6,3 +6,10 @@
 .deployment-feature{padding:0 0 90px}.deployment-feature figure{margin:0}.deployment-feature img{display:block;width:100%;max-height:620px;object-fit:cover;object-position:center 48%;background:#d8dfde}.deployment-feature figcaption{border-top:3px solid #d97942;padding:12px 0 0;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:#536371}@media(max-width:680px){.deployment-feature{padding-bottom:65px}.deployment-feature img{max-height:450px}}
 
 .principal-photo{width:80px;height:96px;object-fit:cover;object-position:35% 45%;flex:none}
+
+/* Software development and small-screen refinements */
+.software-service{display:grid;grid-template-columns:1fr 1.4fr auto;gap:30px;align-items:center;border:1px solid #a9b7b9;border-top:0;padding:27px 29px;background:#f8f9f6}
+.software-service h3{font-size:1.4rem;line-height:1.2;margin:12px 0 0}.software-service p{color:var(--muted);font-size:.96rem;margin:0}.software-service a{font-size:.82rem;font-weight:700;color:#204c6c;text-decoration:none;border-bottom:1px solid #738896;padding:5px 0}.software-service a:hover{color:var(--blue)}
+@media(max-width:900px){.software-service{grid-template-columns:1fr 1fr}.software-service a{justify-self:start}}
+@media(max-width:680px){section[id]{scroll-margin-top:145px}.software-service{grid-template-columns:1fr;gap:15px;padding:24px}.software-service h3{margin-top:10px}.software-service a{justify-self:start}}
+@media(max-width:380px){.wrap,.container{width:calc(100% - 32px)}.hero-copy{padding-left:16px;padding-right:16px}.site-nav a{font-size:.74rem}.site-nav .nav-contact{padding:8px}.page-hero h1{font-size:clamp(2.25rem,10vw,3rem)}h1,h2{overflow-wrap:anywhere}}
