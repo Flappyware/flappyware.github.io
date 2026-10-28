@@ -13,3 +13,9 @@
 @media(max-width:900px){.software-service{grid-template-columns:1fr 1fr}.software-service a{justify-self:start}}
 @media(max-width:680px){section[id]{scroll-margin-top:145px}.software-service{grid-template-columns:1fr;gap:15px;padding:24px}.software-service h3{margin-top:10px}.software-service a{justify-self:start}}
 @media(max-width:380px){.wrap,.container{width:calc(100% - 32px)}.hero-copy{padding-left:16px;padding-right:16px}.site-nav a{font-size:.74rem;white-space:nowrap}.site-nav .nav-contact{padding:8px}.hero h1,.page-hero h1{font-size:clamp(2.25rem,10vw,3rem)}h1,h2{overflow-wrap:anywhere}}
+
+/* Project and service detail */
+.intro-project-link{font-size:.84rem;color:#255575;font-weight:700;text-decoration:none;border-bottom:1px solid #9babad;padding-bottom:4px}.intro-project-link:hover{color:var(--blue)}
+.work-section{padding:90px 0}.case-study{background:#fff}.work-heading{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:start;margin-bottom:45px}.work-heading h2{font-size:clamp(2.3rem,3.8vw,3.7rem);margin:0}.work-heading>p{color:#526671;font-size:1.05rem;max-width:570px;margin:0}.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.work-grid>div{border-top:2px solid #d97942;padding-top:19px}.work-grid h3{font-size:1.2rem;line-height:1.25;margin:0 0 12px}.work-grid p,.work-note{color:#526671;font-size:.95rem;margin:0}.work-note{font-size:.8rem;margin-top:32px}.work-section+.deployment-feature{padding-top:45px}
+@media(max-width:900px){.work-heading{gap:50px}}
+@media(max-width:680px){.work-section{padding:70px 0}.work-heading{grid-template-columns:1fr;gap:20px;margin-bottom:35px}.work-grid{grid-template-columns:1fr;gap:25px}.work-section+.deployment-feature{padding-top:35px}}
