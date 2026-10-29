@@ -114,6 +114,10 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 .case-list{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(2rem,4vw,5rem);padding-top:4rem}
 .case-list h3{font-size:1.45rem}
 .case-list p{margin-top:.8rem;color:#dce9e9}
+@media(min-width:761px) and (max-width:1100px){
+ .hero-copy{grid-template-columns:1.3fr .7fr;gap:2rem}
+ .hero-copy h1{font-size:clamp(2.7rem,5.1vw,3.5rem)}
+}
 @media(max-width:760px){
  :root{--gutter:20px}
  body{font-size:16px}
