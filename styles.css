@@ -211,7 +211,7 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.service-row,.brief-options label{transition:none}}
 
 /* Preserve the documentary design while keeping the page in one light theme. */
-:root{--flappy-refresh-css:1}
+:root{--flappy-refresh-css:2}
 .hero-media{height:clamp(220px,25vh,340px)}
 .hero-copy{padding-block:clamp(2.4rem,4vw,4rem) clamp(3rem,5vw,5rem)}
 .section-intro h2{max-width:16ch}
@@ -267,3 +267,16 @@ a:focus-visible,summary:focus-visible{outline-color:#2a6989}
  .brief-fields input,.project-brief textarea,.project-brief select{border-color:#87aab0}
  a:focus-visible,summary:focus-visible,.project-brief textarea:focus-visible,.project-brief input:focus-visible,.project-brief select:focus-visible{outline-color:#b8dce5}
 }
+
+/* Let the service descriptions read as one useful index of work. */
+.section-intro h2{max-width:12ch}
+.service-list{background:transparent;gap:.35rem}
+.service-row,.service-row:nth-child(odd){background:transparent}
+.service-row:first-child,.service-row:first-child:nth-child(odd){background:#d4e6e1}
+.service-row:hover,.service-row:nth-child(odd):hover{background:#f7faf8}
+.case-photo{margin-top:3rem}
+.case-photo img{width:100%;height:clamp(320px,40vw,560px);object-fit:cover;object-position:center 48%}
+.case-photo figcaption{color:var(--muted)}
+@media(min-width:1101px){.service-list{padding:0}.service-row{padding:1.35rem 1.5rem}}
+@media(max-width:760px){.case-photo{margin-top:2rem}.case-photo img{height:290px;object-position:53% center}}
+@media(prefers-color-scheme:dark){.service-list{background:transparent}.service-row:first-child,.service-row:first-child:nth-child(odd){background:#254954}.service-row:hover,.service-row:nth-child(odd):hover{background:#284c57}}
