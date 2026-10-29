@@ -69,8 +69,6 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 .approach-layout,.about-layout,.detail-layout,.examples-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(3rem,8vw,10rem);align-items:start}
 .approach-layout>div,.about-copy,.detail-copy{max-width:50rem}
 .approach-layout .lead,.about-copy .lead{margin-bottom:1.5rem}
-.polar-mark{display:inline-flex;align-items:center;justify-content:center;background:var(--deep);width:200px;min-height:105px;margin-top:2.2rem;padding:1.1rem}
-.polar-mark img,.partner img{width:156px;height:auto;max-height:72px;object-fit:contain}
 .about{padding-block:clamp(5rem,9vw,9rem);background:var(--paper)}
 .about-title h2{max-width:14ch}
 .portrait{max-width:250px;margin-top:3rem}
@@ -87,6 +85,10 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 .project-brief{background:#e4eeeb;color:var(--ink);padding:clamp(1.4rem,3vw,2.75rem)}
 .project-brief h3{font-size:clamp(1.6rem,2.6vw,2.5rem)}
 .project-brief>p{font-size:1rem;margin-top:.8rem}
+.brief-fields{display:grid;gap:.5rem;margin-top:1.5rem}
+.brief-fields label{font-weight:700;font-size:.95rem;margin-top:.5rem}
+.brief-fields label span,.project-brief legend span{font-weight:400;color:var(--muted)}
+.brief-fields input,.project-brief select{display:block;width:100%;min-height:46px;padding:.7rem .8rem;font:inherit;color:var(--ink);background:#fff;border:2px solid #a9c2c1;border-radius:0}
 .project-brief fieldset{border:0;padding:0;margin:1.7rem 0 0;min-width:0}
 .project-brief legend,.brief-message{font-weight:700;font-size:.95rem}
 .brief-options{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:.8rem}
@@ -97,9 +99,12 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 .brief-message{display:block;margin-top:1.5rem}
 .brief-message span{font-weight:400;color:var(--muted)}
 .project-brief textarea{display:block;width:100%;resize:vertical;min-height:90px;margin-top:.6rem;padding:.85rem;font:inherit;line-height:1.4;color:var(--ink);background:#fff;border:2px solid #a9c2c1;border-radius:0}
-.project-brief textarea:focus-visible,.brief-options input:focus-visible{outline:3px solid #2a6989;outline-offset:2px}
-.brief-action{display:inline-flex;align-items:center;justify-content:space-between;gap:2rem;margin-top:1rem;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;padding:.85rem 1.1rem}
+.project-brief select{margin-top:.6rem}
+.project-brief textarea:focus-visible,.project-brief input:focus-visible,.project-brief select:focus-visible{outline:3px solid #2a6989;outline-offset:2px}
+.contact-trap{position:absolute;left:-10000px;width:2px;height:2px;overflow:hidden}
+.brief-action{display:inline-flex;align-items:center;justify-content:space-between;gap:2rem;margin-top:1rem;background:var(--ink);color:#fff;text-decoration:none;font:inherit;font-weight:700;padding:.85rem 1.1rem;border:0;cursor:pointer}
 .brief-action:hover{background:var(--blue)}
+.brief-action:disabled{opacity:.65;cursor:wait}
 .project-brief .brief-note{font-size:.85rem;line-height:1.4;color:#385563;margin-top:.8rem}
 .site-footer{background:#102a3d;color:#dbe7e9;padding-block:3.5rem 2rem}
 .footer-layout{display:flex;justify-content:space-between;gap:3rem}
@@ -124,8 +129,6 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 .example-list{display:grid;gap:2.6rem}
 .example-list h3{font-size:1.6rem}
 .example-list p{margin-top:.7rem;max-width:43rem}
-.partner{background:var(--paper);padding-bottom:3.5rem}
-.partner a{display:inline-flex;background:var(--deep);padding:1.2rem 1.4rem}
 .case-study{background:var(--deep);color:#f7faf8;padding-block:clamp(5rem,8vw,8rem);scroll-margin-top:1rem}
 .case-heading{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(3rem,8vw,10rem);align-items:end}
 .case-heading>p{font-size:clamp(1.15rem,1.5vw,1.45rem);line-height:1.45;color:#dce9e9;max-width:45rem}

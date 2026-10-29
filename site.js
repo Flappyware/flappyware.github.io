@@ -8,17 +8,27 @@
 
   const brief = document.getElementById('project-brief');
   if (brief) {
-    const email = document.getElementById('brief-email');
-    const details = document.getElementById('brief-details');
-    const updateDraft = () => {
-      const areas = [...brief.querySelectorAll('input[name="scope"]:checked')].map(input => input.value);
-      const message = details.value.trim();
-      const body = ['Hello Flappyware,', '', ...(areas.length ? ['I would like to discuss:', ...areas.map(area => `- ${area}`), ''] : []), ...(message ? [message, ''] : []), 'Thank you.'].join('\n');
-      email.href = `mailto:brandon@flappyware.com?subject=${encodeURIComponent('Infrastructure project inquiry')}&body=${encodeURIComponent(body)}`;
-    };
-    brief.addEventListener('change', updateDraft);
-    details.addEventListener('input', updateDraft);
-    updateDraft();
+    const status = document.getElementById('brief-status');
+    const button = document.getElementById('brief-send');
+    brief.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (!brief.reportValidity() || button.disabled) return;
+      const form = new FormData(brief);
+      const payload = {name:form.get('name'),email:form.get('email'),company:form.get('company'),message:form.get('message'),source:form.get('source'),website:form.get('website'),services:form.getAll('scope')};
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 15000);
+      button.disabled = true;
+      status.textContent = 'Sending your inquiry…';
+      try {
+        const response = await fetch('https://flappyware-site-contact.flappyware-llc.workers.dev/', {method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload),signal:controller.signal});
+        const result = await response.json();
+        if (!response.ok || !result.ok) throw new Error(result.error || 'Please try again or email brandon@flappyware.com.');
+        window.location.assign('/inquiry-received/');
+      } catch (error) {
+        status.textContent = error.name === 'AbortError' || error instanceof TypeError ? 'We could not confirm delivery. Please email brandon@flappyware.com.' : error.message;
+        button.disabled = false;
+      } finally { clearTimeout(timeout); }
+    });
     brief.hidden = false;
   }
 
