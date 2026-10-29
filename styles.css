@@ -211,6 +211,7 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.service-row,.brief-options label{transition:none}}
 
 /* Preserve the documentary design while keeping the page in one light theme. */
+:root{--flappy-refresh-css:1}
 .hero-media{height:clamp(220px,25vh,340px)}
 .hero-copy{padding-block:clamp(2.4rem,4vw,4rem) clamp(3rem,5vw,5rem)}
 .section-intro h2{max-width:16ch}
