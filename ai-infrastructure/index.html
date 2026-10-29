@@ -1,5 +1,63 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI &amp; HPC Infrastructure and GPU Clusters | Flappyware</title><meta name="description" content="Plan and bring together the infrastructure behind AI workloads."><link rel="canonical" href="https://flappyware.com/ai-infrastructure/"><meta name="theme-color" content="#0b1220"><meta property="og:type" content="website"><meta property="og:title" content="AI infrastructure &amp; GPU clusters | Flappyware"><meta property="og:description" content="Plan and bring together the infrastructure behind AI workloads."><meta property="og:url" content="https://flappyware.com/ai-infrastructure/"><meta property="og:image" content="https://flappyware.com/og-image.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="stylesheet" href="/styles.css?v=20261028j"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Flappyware LLC", "url": "https://flappyware.com/", "email": "brandon@flappyware.com", "sameAs": ["https://www.linkedin.com/company/flappyware"], "founder": {"@type": "Person", "name": "Brandon Jank", "sameAs": "https://www.linkedin.com/in/bjank/"}, "areaServed": "US", "address": {"@type": "PostalAddress", "postOfficeBoxNumber": "2974", "addressLocality": "Coeur d'Alene", "addressRegion": "ID", "postalCode": "83816", "addressCountry": "US"}}</script></head><body><a class="skip-link" href="#main">Skip to content</a>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI &amp; HPC Infrastructure and GPU Clusters | Flappyware</title><meta name="description" content="Plan and bring together the infrastructure behind AI workloads."><link rel="canonical" href="https://flappyware.com/ai-infrastructure/"><meta name="theme-color" content="#0b1220"><meta property="og:type" content="website"><meta property="og:title" content="AI infrastructure &amp; GPU clusters | Flappyware"><meta property="og:description" content="Plan and bring together the infrastructure behind AI workloads."><meta property="og:url" content="https://flappyware.com/ai-infrastructure/"><meta property="og:image" content="https://flappyware.com/og-image.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="stylesheet" href="/styles.css?v=20261028j"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Flappyware LLC", "url": "https://flappyware.com/", "email": "brandon@flappyware.com", "sameAs": ["https://www.linkedin.com/company/flappyware"], "founder": {"@type": "Person", "name": "Brandon Jank", "sameAs": "https://www.linkedin.com/in/bjank/"}, "areaServed": "US", "address": {"@type": "PostalAddress", "postOfficeBoxNumber": "2974", "addressLocality": "Coeur d'Alene", "addressRegion": "ID", "postalCode": "83816", "addressCountry": "US"}}</script><style data-cache-bridge>
+/* Preserve the documentary design while keeping the page in one light theme. */
+.hero-media{height:clamp(220px,25vh,340px)}
+.hero-copy{padding-block:clamp(2.4rem,4vw,4rem) clamp(3rem,5vw,5rem)}
+.section-intro h2{max-width:16ch}
+.featured-work,.case-study{background:#e1ece9;color:var(--ink)}
+.work-intro{display:block}
+.work-intro p{margin-top:1.15rem;color:var(--ink)}
+.work-copy{background:#d5e5e1;color:var(--ink)}
+.work-copy p,.case-heading>p,.case-list p{color:var(--ink)}
+.contact,.page-contact{background:#dce9e7;color:var(--ink)}
+.contact-location{color:var(--muted)}
+.site-footer{background:#e7efed;color:var(--ink)}
+.footer-brand{color:var(--ink)}
+.footer-bottom{color:var(--muted)}
+.case-heading{display:block}
+.case-heading>p{margin-top:1.5rem}
+.case-list{grid-template-columns:1fr 1.2fr .9fr}
+.examples + .detail-section .detail-layout{display:block}
+.examples + .detail-section .detail-copy{margin-top:1.5rem}
+.project-brief input::placeholder,.project-brief textarea::placeholder{color:#506771;opacity:1}
+/* Motion communicates interactive feedback; content itself remains still. */
+.arrive,.hero-media img.arrive,.work-photo img.arrive,.page-photo img.arrive{animation:none}
+
+@media(max-width:760px){
+ .hero-media{height:270px}
+ .hero-copy{padding-block:2.8rem 3rem}
+ .case-list{grid-template-columns:1fr}
+}
+
+/* One consistent page theme is selected by the visitor's device preference. */
+@media(prefers-color-scheme:dark){
+ :root{--ink:#e4efef;--deep:#102d43;--muted:#b8cdd2;--paper:#102633;--mist:#193643;color-scheme:dark}
+ .site-header,.about,.page-hero,.detail-section{background:#102633;color:var(--ink)}
+ .services-section,.examples,.site-footer{background:#193643;color:var(--ink)}
+ .featured-work,.case-study,.contact,.page-contact,.approach{background:#1a3945;color:var(--ink)}
+ .work-copy,.project-brief{background:#254954;color:var(--ink)}
+ .service-list{background:#1c3d48}
+ .service-row:nth-child(odd){background:transparent}
+ .service-row:hover,.service-row:nth-child(odd):hover{background:#284c57}
+ .service-row p,.other-services p,.brief-note,.project-brief .brief-note{color:#cfdddd}
+ .work-intro p,.work-copy p,.case-heading>p,.case-list p{color:var(--ink)}
+ .footer-brand{color:var(--ink)}
+ .project-brief input,.project-brief textarea,.project-brief select,.brief-options label{background:#15333e;color:var(--ink);border-color:#87aab0}
+ .project-brief input::placeholder,.project-brief textarea::placeholder{color:#b8cdd2}
+ .brief-options label:hover,.brief-options label:has(input:checked){background:#315b64}
+ .nav-contact,.action,.brief-action{background:#d6e9e9;color:#102c42}
+ .nav-contact:hover,.action:hover,.brief-action:hover{background:#a8ced6;color:#102c42}
+}
+
+/* Keep control boundaries and keyboard focus visible in both themes. */
+.brief-fields input,.project-brief textarea,.project-brief select{border-color:#607f80}
+a:focus-visible,summary:focus-visible{outline-color:#2a6989}
+@media(prefers-color-scheme:dark){
+ .brief-fields input,.project-brief textarea,.project-brief select{border-color:#87aab0}
+ a:focus-visible,summary:focus-visible,.project-brief textarea:focus-visible,.project-brief input:focus-visible,.project-brief select:focus-visible{outline-color:#b8dce5}
+}
+
+</style></head><body><a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header"><div class="frame header-inner">
       <a class="brand" href="/" aria-label="Flappyware home"><span class="brand-mark" aria-hidden="true">F<span>.</span></span><span>flappyware<span class="brand-dot">.</span></span></a>
       <nav class="desktop-nav" aria-label="Primary"><a href="/#services">Services</a><a href="/#work">Work</a><a href="/#about">About</a><a class="nav-contact" href="/#contact">Contact</a></nav>
