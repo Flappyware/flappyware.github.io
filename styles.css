@@ -61,9 +61,8 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 .work-photo{min-height:420px}
 .work-photo img{width:100%;height:100%;object-fit:cover}
 .work-copy{display:flex;flex-direction:column;align-items:start;justify-content:center;padding:clamp(2.5rem,6vw,7rem);background:#19435a}
-.work-category,.case-label{font-weight:700;color:#bcd7df;margin-bottom:1.1rem}
 .work-copy h3{font-size:clamp(2.4rem,4vw,4.5rem);max-width:12ch}
-.work-copy p:not(.work-category){max-width:36rem;margin-top:1.6rem;color:#e0ebeb;font-size:1.12rem}
+.work-copy p{max-width:36rem;margin-top:1.6rem;color:#e0ebeb;font-size:1.12rem}
 .text-link{display:inline-flex;gap:1.4rem;align-items:center;font-weight:700;margin-top:1.8rem}
 .text-link:hover{text-decoration-thickness:2px}
 .approach{background:#dce9e7;padding-block:clamp(5rem,9vw,9rem)}
@@ -73,7 +72,7 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 .polar-mark{display:inline-flex;align-items:center;justify-content:center;background:var(--deep);width:200px;min-height:105px;margin-top:2.2rem;padding:1.1rem}
 .polar-mark img,.partner img{width:156px;height:auto;max-height:72px;object-fit:contain}
 .about{padding-block:clamp(5rem,9vw,9rem);background:var(--paper)}
-.about-title h2{max-width:10ch}
+.about-title h2{max-width:14ch}
 .portrait{max-width:250px;margin-top:3rem}
 .portrait img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center}
 .portrait figcaption{font-weight:700;color:var(--ink);font-size:.9rem;line-height:1.4}
@@ -82,8 +81,26 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 .contact,.page-contact{background:#266786;color:white;padding-block:clamp(4.5rem,8vw,8rem)}
 .contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,7vw,7rem);align-items:start}
 .contact-layout p{max-width:32rem;font-size:1.15rem}
+.contact-intro{margin-top:1.5rem}
 .contact-email{display:inline-flex;gap:1rem;align-items:center;font-family:Manrope,sans-serif;font-size:clamp(1.15rem,2.1vw,2rem);font-weight:700;letter-spacing:-.035em;margin-top:1.6rem;overflow-wrap:anywhere}
 .contact-location{margin-top:2.5rem;color:#deebef;font-size:.95rem!important}
+.project-brief{background:#e4eeeb;color:var(--ink);padding:clamp(1.4rem,3vw,2.75rem)}
+.project-brief h3{font-size:clamp(1.6rem,2.6vw,2.5rem)}
+.project-brief>p{font-size:1rem;margin-top:.8rem}
+.project-brief fieldset{border:0;padding:0;margin:1.7rem 0 0;min-width:0}
+.project-brief legend,.brief-message{font-weight:700;font-size:.95rem}
+.brief-options{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:.8rem}
+.brief-options label{display:flex;align-items:center;gap:.7rem;min-height:58px;padding:.75rem;background:#fff;cursor:pointer;line-height:1.3;font-size:.95rem;transition:background-color .18s ease}
+.brief-options label:hover{background:#d3e3e0}
+.brief-options input{width:20px;height:20px;flex:none;margin:0;accent-color:var(--blue)}
+.brief-options label:has(input:checked){background:#c4dddc}
+.brief-message{display:block;margin-top:1.5rem}
+.brief-message span{font-weight:400;color:var(--muted)}
+.project-brief textarea{display:block;width:100%;resize:vertical;min-height:90px;margin-top:.6rem;padding:.85rem;font:inherit;line-height:1.4;color:var(--ink);background:#fff;border:2px solid #a9c2c1;border-radius:0}
+.project-brief textarea:focus-visible,.brief-options input:focus-visible{outline:3px solid #2a6989;outline-offset:2px}
+.brief-action{display:inline-flex;align-items:center;justify-content:space-between;gap:2rem;margin-top:1rem;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;padding:.85rem 1.1rem}
+.brief-action:hover{background:var(--blue)}
+.project-brief .brief-note{font-size:.85rem;line-height:1.4;color:#385563;margin-top:.8rem}
 .site-footer{background:#102a3d;color:#dbe7e9;padding-block:3.5rem 2rem}
 .footer-layout{display:flex;justify-content:space-between;gap:3rem}
 .footer-brand{color:#fff;font-size:1.6rem}
@@ -93,7 +110,7 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 .page-hero{padding-top:2.2rem;background:var(--paper)}
 .back-link{display:inline-block;font-size:.9rem;font-weight:700}
 .page-hero-layout{display:grid;grid-template-columns:1fr .7fr;gap:clamp(2rem,6vw,7rem);align-items:end;padding-block:3.5rem 4.5rem}
-.page-hero-layout h1{max-width:13ch}
+.page-hero-layout h1{max-width:17ch;font-size:clamp(2.8rem,5.2vw,5.4rem)}
 .page-hero-layout p{max-width:36rem}
 .page-photo{height:clamp(300px,37vw,580px);background:#ccd6d6;overflow:hidden}
 .detail-section{padding-block:clamp(5rem,8vw,8rem)}
@@ -152,15 +169,27 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
  .portrait{max-width:200px;margin-top:2rem}
  .about-title h2{max-width:12ch}
  .contact,.page-contact{padding-block:4rem}
+ .project-brief{padding:1.4rem}
+ .brief-options{grid-template-columns:1fr}
  .footer-layout{display:block}
  .footer-layout nav{margin-top:2rem;gap:1rem 1.5rem}
  .page-hero{padding-top:1.6rem}
  .page-hero-layout{padding-block:2.5rem 3rem}
+ .page-hero-layout h1{font-size:clamp(2.15rem,8.4vw,3.2rem);max-width:none}
  .page-photo{height:270px}
  .detail-layout h2,.examples-layout h2{max-width:none}
  .case-list{grid-template-columns:1fr;gap:2rem;padding-top:2.5rem}
  .contact-email{font-size:1.15rem}
 }
 @media(max-width:350px){h1{font-size:1.95rem}.contact-email{font-size:1rem}.brand-mark{width:32px;height:32px;line-height:32px}}
-@media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.service-row{transition:none}}
+@media(max-width:350px){.page-hero-layout h1{font-size:1.9rem}.service-row h3{font-size:1.2rem}}
+@media(prefers-reduced-motion:no-preference){
+ .arrive{animation:field-arrive .55s cubic-bezier(.2,.7,.2,1) both}
+ .hero-media img.arrive,.work-photo img.arrive,.page-photo img.arrive{animation:field-image 1s cubic-bezier(.2,.7,.2,1) both}
+ .service-row>span,.text-link span,.action span,.brief-action span{transition:transform .2s ease}
+ .service-row:hover>span,.text-link:hover span,.action:hover span,.brief-action:hover span{transform:translate(3px,-3px)}
+ @keyframes field-arrive{from{transform:translateY(12px)}to{transform:translateY(0)}}
+ @keyframes field-image{from{transform:scale(1.035)}to{transform:scale(1)}}
+}
+@media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.service-row,.brief-options label{transition:none}}
 
