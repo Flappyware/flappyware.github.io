@@ -256,3 +256,11 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
  .nav-contact,.action,.brief-action{background:#d6e9e9;color:#102c42}
  .nav-contact:hover,.action:hover,.brief-action:hover{background:#a8ced6;color:#102c42}
 }
+
+/* Keep control boundaries and keyboard focus visible in both themes. */
+.brief-fields input,.project-brief textarea,.project-brief select{border-color:#607f80}
+a:focus-visible,summary:focus-visible{outline-color:#2a6989}
+@media(prefers-color-scheme:dark){
+ .brief-fields input,.project-brief textarea,.project-brief select{border-color:#87aab0}
+ a:focus-visible,summary:focus-visible,.project-brief textarea:focus-visible,.project-brief input:focus-visible,.project-brief select:focus-visible{outline-color:#b8dce5}
+}
