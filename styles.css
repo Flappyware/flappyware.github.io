@@ -210,3 +210,49 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 }
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.service-row,.brief-options label{transition:none}}
 
+/* Preserve the documentary design while keeping the page in one light theme. */
+.hero-media{height:clamp(220px,25vh,340px)}
+.hero-copy{padding-block:clamp(2.4rem,4vw,4rem) clamp(3rem,5vw,5rem)}
+.section-intro h2{max-width:16ch}
+.featured-work,.case-study{background:#e1ece9;color:var(--ink)}
+.work-intro{display:block}
+.work-intro p{margin-top:1.15rem;color:var(--ink)}
+.work-copy{background:#d5e5e1;color:var(--ink)}
+.work-copy p,.case-heading>p,.case-list p{color:var(--ink)}
+.contact,.page-contact{background:#dce9e7;color:var(--ink)}
+.contact-location{color:var(--muted)}
+.site-footer{background:#e7efed;color:var(--ink)}
+.footer-brand{color:var(--ink)}
+.footer-bottom{color:var(--muted)}
+.case-heading{display:block}
+.case-heading>p{margin-top:1.5rem}
+.case-list{grid-template-columns:1fr 1.2fr .9fr}
+.project-brief input::placeholder,.project-brief textarea::placeholder{color:#506771;opacity:1}
+/* Motion communicates interactive feedback; content itself remains still. */
+.arrive,.hero-media img.arrive,.work-photo img.arrive,.page-photo img.arrive{animation:none}
+
+@media(max-width:760px){
+ .hero-media{height:270px}
+ .hero-copy{padding-block:2.8rem 3rem}
+ .case-list{grid-template-columns:1fr}
+}
+
+/* One consistent page theme is selected by the visitor's device preference. */
+@media(prefers-color-scheme:dark){
+ :root{--ink:#e4efef;--deep:#102d43;--muted:#b8cdd2;--paper:#102633;--mist:#193643;color-scheme:dark}
+ .site-header,.about,.page-hero,.detail-section{background:#102633;color:var(--ink)}
+ .services-section,.examples,.site-footer{background:#193643;color:var(--ink)}
+ .featured-work,.case-study,.contact,.page-contact,.approach{background:#1a3945;color:var(--ink)}
+ .work-copy,.project-brief{background:#254954;color:var(--ink)}
+ .service-list{background:#1c3d48}
+ .service-row:nth-child(odd){background:transparent}
+ .service-row:hover,.service-row:nth-child(odd):hover{background:#284c57}
+ .service-row p,.other-services p,.brief-note,.project-brief .brief-note{color:#cfdddd}
+ .work-intro p,.work-copy p,.case-heading>p,.case-list p{color:var(--ink)}
+ .footer-brand{color:var(--ink)}
+ .project-brief input,.project-brief textarea,.project-brief select,.brief-options label{background:#15333e;color:var(--ink);border-color:#87aab0}
+ .project-brief input::placeholder,.project-brief textarea::placeholder{color:#b8cdd2}
+ .brief-options label:hover,.brief-options label:has(input:checked){background:#315b64}
+ .nav-contact,.action,.brief-action{background:#d6e9e9;color:#102c42}
+ .nav-contact:hover,.action:hover,.brief-action:hover{background:#a8ced6;color:#102c42}
+}
