@@ -1,4 +1,11 @@
 (() => {
+  const menu = document.querySelector('.mobile-menu');
+  if (menu) {
+    menu.addEventListener('click', event => {
+      if (event.target.closest('a')) menu.open = false;
+    });
+  }
+
   const brief = document.getElementById('project-brief');
   if (brief) {
     const email = document.getElementById('brief-email');
