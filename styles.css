@@ -227,6 +227,8 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 .case-heading{display:block}
 .case-heading>p{margin-top:1.5rem}
 .case-list{grid-template-columns:1fr 1.2fr .9fr}
+.examples + .detail-section .detail-layout{display:block}
+.examples + .detail-section .detail-copy{margin-top:1.5rem}
 .project-brief input::placeholder,.project-brief textarea::placeholder{color:#506771;opacity:1}
 /* Motion communicates interactive feedback; content itself remains still. */
 .arrive,.hero-media img.arrive,.work-photo img.arrive,.page-photo img.arrive{animation:none}
