@@ -132,6 +132,20 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 .case-list{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(2rem,4vw,5rem);padding-top:4rem}
 .case-list h3{font-size:1.45rem}
 .case-list p{margin-top:.8rem;color:#dce9e9}
+@media(min-width:1101px){
+ .services-section{display:grid;grid-template-columns:.85fr 1.15fr;gap:0 clamp(3rem,7vw,7rem);padding-inline:max(var(--gutter),calc((100vw - 1650px)/2))}
+ .services-section>.frame{width:100%;margin:0}
+ .section-intro{display:block;padding-bottom:0}
+ .service-image{max-width:none;margin-top:2.5rem}
+ .service-list{align-content:start;gap:0;background:#d8e6e3;padding:.7rem}
+ .service-row{grid-template-columns:1fr auto;gap:.5rem 1rem;padding:1.3rem}
+ .service-row:nth-child(odd){background:transparent}
+ .service-row:hover,.service-row:nth-child(odd):hover{background:#f7faf8}
+ .service-row h3{grid-column:1;grid-row:1}
+ .service-row p{grid-column:1;grid-row:2}
+ .service-row>span{grid-column:2;grid-row:1}
+ .other-services{grid-column:1/-1}
+}
 @media(min-width:761px) and (max-width:1100px){
  .hero-copy{grid-template-columns:1.3fr .7fr;gap:2rem;align-items:center}
  .hero-copy h1{font-size:clamp(2.7rem,5.1vw,3.5rem)}
