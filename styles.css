@@ -43,7 +43,7 @@ p+p{margin-top:1.15em}
 .section-intro{display:grid;grid-template-columns:1fr .7fr;align-items:end;gap:4rem;padding-bottom:clamp(2.5rem,5vw,5rem)}
 .section-lede{max-width:32rem;margin-top:1.4rem}
 .service-image{max-width:570px;justify-self:end;width:100%}
-.service-image img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.service-image img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
 figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 .service-list{display:grid;gap:.35rem}
 .service-row{display:grid;grid-template-columns:1fr 1.05fr auto;align-items:start;gap:2rem;padding:1.65rem 1.5rem;text-decoration:none;transition:background-color .18s ease}
@@ -74,7 +74,7 @@ figcaption{font-size:.8rem;color:var(--muted);margin-top:.6rem}
 .about{padding-block:clamp(5rem,9vw,9rem);background:var(--paper)}
 .about-title h2{max-width:10ch}
 .portrait{max-width:250px;margin-top:3rem}
-.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center}
+.portrait img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center}
 .portrait figcaption{font-weight:700;color:var(--ink);font-size:.9rem;line-height:1.4}
 .portrait figcaption span{color:var(--muted);font-weight:400}
 .about-copy p{max-width:50rem}
